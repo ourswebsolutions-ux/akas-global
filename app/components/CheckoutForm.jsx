@@ -213,7 +213,7 @@ export default function CheckoutForm() {
                 </span>
                 <input
                   id="amount"
-                  type="text"
+                  type="number"
                   inputMode="decimal"
                   name="amount"
                   value={formData.amount}
