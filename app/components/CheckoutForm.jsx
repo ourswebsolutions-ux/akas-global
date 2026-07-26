@@ -68,8 +68,12 @@ export default function CheckoutForm() {
     }
 
     if (name === 'amount') {
-      if (value && !/^\d*\.?\d{0,2}$/.test(value)) return;
-    }
+  // Only allow numbers with up to 2 decimal places
+  if (value && !/^\d*\.?\d{0,2}$/.test(value)) return;
+
+  // Don't allow values less than 500
+  if (value && Number(value) < 500) return;
+}
 
     setFormData((prev) => ({ ...prev, [name]: formattedValue }));
     clearErrorOnEdit();
@@ -85,6 +89,10 @@ export default function CheckoutForm() {
     setMessage('');
 
     try {
+      if (Number(formData.amount) < 500) {
+  alert("Minimum amount is 500");
+  return;
+}
       const response = await fetch('/api/pay', {
         method: 'POST',
         headers: {
