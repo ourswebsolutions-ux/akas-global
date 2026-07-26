@@ -221,6 +221,7 @@ export default function CheckoutForm() {
                   onFocus={() => setFocused('amount')}
                   onBlur={() => setFocused(null)}
                   placeholder="0.00"
+                  min={500}
                   disabled={isDisabled}
                   className={`${inputBase} pl-10 pr-4 text-lg text-black  font-medium ${
                     focused === 'amount' ? inputFocus : inputIdle
