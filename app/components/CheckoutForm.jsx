@@ -67,13 +67,7 @@ export default function CheckoutForm() {
       if (formattedValue.length > 4) return;
     }
 
-    if (name === 'amount') {
-  // Only allow numbers with up to 2 decimal places
-  if (value && !/^\d*\.?\d{0,2}$/.test(value)) return;
-
-  // Don't allow values less than 500
-  if (value && Number(value) < 500) return;
-}
+  
 
     setFormData((prev) => ({ ...prev, [name]: formattedValue }));
     clearErrorOnEdit();
@@ -229,7 +223,7 @@ export default function CheckoutForm() {
                   onFocus={() => setFocused('amount')}
                   onBlur={() => setFocused(null)}
                   placeholder="0.00"
-                  
+                  min={500}
                   disabled={isDisabled}
                   className={`${inputBase} pl-10 pr-4 text-lg text-black  font-medium ${
                     focused === 'amount' ? inputFocus : inputIdle
