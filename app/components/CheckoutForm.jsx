@@ -83,8 +83,11 @@ export default function CheckoutForm() {
     setMessage('');
 
     try {
+   
       if (Number(formData.amount) < 500) {
-  alert("Minimum amount is 500");
+  // alert("Minimum amount is 500");
+   setStatus('error');
+        setMessage(data.message || 'Minimum amount is $500');
   return;
 }
       const response = await fetch('/api/pay', {
