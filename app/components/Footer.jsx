@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { Baloo_2 } from "next/font/google";
-import image from "next/image";
+import Image from "next/image";
 import {
   MapPin,
   Phone,
@@ -58,13 +58,12 @@ export default function Footer() {
           <div>
             {/* Logo */}
             <div className="mb-4 select-none">
-              <img
-                src="/akaslogo.png" // public folder mein image honi chahiye
-                alt="AKAS Global Connect"
-                width={180}
-                height={60}
-                priority
-                className="h-auto w-[180px] object-contain bg-white rounded-lg p-1"
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={150}
+                height={50}
+                priority={true}
               />
             </div>
 

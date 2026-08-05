@@ -3,82 +3,70 @@
 
 "use client";
 
-import { motion } from "framer-motion";
 
-export default function SolarPanelInstallation() {
-  const fadeUp = {
-    hidden: { opacity: 0, y: 28 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { type: "spring", stiffness: 90, damping: 18, mass: 0.8 },
-    },
-  };
+import { motion, type Variants } from "framer-motion";
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring" as const, stiffness: 90, damping: 18, mass: 0.8 },
+  },
+};
 
-  const slideFromLeft = {
-    hidden: { opacity: 0, x: -48 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { type: "spring", stiffness: 85, damping: 18, mass: 0.85 },
-    },
-  };
+const slideFromLeft = {
+  hidden: { opacity: 0, x: -48 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring" as const, stiffness: 85, damping: 18, mass: 0.85 },
+  },
+};
 
-  const slideFromRight = {
-    hidden: { opacity: 0, x: 48 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { type: "spring", stiffness: 85, damping: 18, mass: 0.85 },
-    },
-  };
+const slideFromRight = {
+  hidden: { opacity: 0, x: 48 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring" as const, stiffness: 85, damping: 18, mass: 0.85 },
+  },
+};
 
-  const imageReveal = {
-    hidden: { opacity: 0, scale: 1.06 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { type: "spring", stiffness: 70, damping: 20, mass: 1 },
-    },
-  };
+const imageReveal = {
+  hidden: { opacity: 0, scale: 1.06 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { type: "spring" as const, stiffness: 70, damping: 20, mass: 1 },
+  },
+};
 
-  const scaleFade = {
-    hidden: { opacity: 0, scale: 0.92 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { type: "spring", stiffness: 110, damping: 16 },
-    },
-  };
+const scaleFade = {
+  hidden: { opacity: 0, scale: 0.92 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { type: "spring" as const, stiffness: 110, damping: 16 },
+  },
+};
 
-  const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.09,
-        delayChildren: 0.12,
-      },
-    },
-  };
+const listItem = {
+  hidden: { opacity: 0, x: -16 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring" as const, stiffness: 100, damping: 18 },
+  },
+};
 
-  const listItem = {
-    hidden: { opacity: 0, x: -16 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { type: "spring", stiffness: 100, damping: 18 },
-    },
-  };
-
-  const iconPop = {
-    hidden: { opacity: 0, scale: 0.6 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { type: "spring", stiffness: 220, damping: 14 },
-    },
-  };
+const iconPop = {
+  hidden: { opacity: 0, scale: 0.6 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { type: "spring" as const, stiffness: 220, damping: 14 },
+  },
+};
 
   return (
     <div className="min-h-screen bg-white">
