@@ -22,8 +22,8 @@ const baloo = Baloo_2({
 
 export default function Footer() {
   return (
-<footer className="w-full bg-[#0B2D5B] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-12 border-t border-[#1D4A85]">
-  <div className="mx-auto max-w-[1350px]">
+    <footer className="w-full bg-[#0B2D5B] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-12 border-t border-[#1D4A85]">
+      <div className="mx-auto max-w-[1350px]">
         {/* Top Newsletter / Stay Bright Section */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-12 border-b border-white/10 gap-8">
           <div>
@@ -53,20 +53,20 @@ export default function Footer() {
 
         {/* Main 4 Columns Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pt-12 pb-12">
-          
+
           {/* Col 1: Brand Info & Socials */}
           <div>
             {/* Logo */}
-<div className="mb-4 select-none">
-  <img
-    src="/akaslogo.png" // public folder mein image honi chahiye
-    alt="AKAS Global Connect"
-    width={180}
-    height={60}
-    priority
-    className="h-auto w-[180px] object-contain bg-white rounded-lg p-1"
-  />
-</div>
+            <div className="mb-4 select-none">
+              <img
+                src="/akaslogo.png" // public folder mein image honi chahiye
+                alt="AKAS Global Connect"
+                width={180}
+                height={60}
+                priority
+                className="h-auto w-[180px] object-contain bg-white rounded-lg p-1"
+              />
+            </div>
 
             <p className="text-xs sm:text-sm text-[#F5F7FA]/80 mb-6 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.

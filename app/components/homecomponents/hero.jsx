@@ -33,8 +33,7 @@ export default function HeroSection() {
         </motion.div>
 
         {/* Main Hero Text */}
-        <div className="relative z-10 mx-auto max-w-[1350px] px-4 sm:px-6 pt-24 pb-[260px] sm:pt-52 sm:pb-[440px] lg:pt-56 lg:pb-[470px]">
-          <motion.div
+<div className="relative z-10 mx-auto max-w-[1350px] px-4 sm:px-6 pt-36 pb-[260px] sm:pt-52 sm:pb-[440px] lg:pt-56 lg:pb-[470px]">          <motion.div
             className="flex flex-col items-center text-center max-w-6xl mx-auto"
             initial="hidden"
             whileInView="visible"

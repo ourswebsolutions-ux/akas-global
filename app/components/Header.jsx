@@ -9,20 +9,20 @@ export default function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 z-50 w-full px-4 pt-5 sm:px-6 lg:px-12">
+    <header className="absolute top-0 left-0 z-50 w-full px-3 pt-3 sm:px-6 sm:pt-5 lg:px-12">
       <div className="mx-auto max-w-[1350px]">
         {/* Navbar */}
-        <div className="flex h-[78px] items-center  justify-between rounded-2xl border border-[#C8A24A]/20 bg-white/95 px-5 shadow-lg backdrop-blur-lg sm:px-6 lg:px-8">
-        <Link href="/" className=" ">
-  <Image
-    src="/akaslogo.png"
-    alt="AKAS Global Connect"
-    width={180}
-    height={54}
-    priority
-    className="h-auto w-[140px]  border-[#C8A24A]/20  sm:w-[160px] lg:w-[185px]"
-  />
-</Link>
+        <div className="flex h-[64px] items-center justify-between rounded-2xl border border-[#C8A24A]/20 bg-white/95 px-4 shadow-lg backdrop-blur-lg sm:h-[78px] sm:px-6 lg:px-8">
+          <Link href="/" className="flex-shrink-0">
+            <Image
+              src="/akaslogo.png"
+              alt="AKAS Global Connect"
+              width={180}
+              height={54}
+              priority
+              className="h-auto w-[110px] border-[#C8A24A]/20 sm:w-[160px] lg:w-[185px]"
+            />
+          </Link>
 
           {/* Desktop Menu */}
           <nav className="hidden items-center gap-8 lg:flex">
@@ -61,8 +61,6 @@ export default function Navbar() {
                 >
                   Services Details
                 </a>
-
-                
               </div>
             </div>
 
@@ -87,8 +85,6 @@ export default function Navbar() {
                 >
                   Projects Details
                 </a>
-
-              
               </div>
             </div>
 
@@ -111,7 +107,7 @@ export default function Navbar() {
                   href="/team"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
                 >
-                 Team
+                  Team
                 </a>
 
                 <a
@@ -124,7 +120,7 @@ export default function Navbar() {
             </div>
 
             <a
-              href="#"
+              href="/contact"
               className="font-medium text-gray-700 transition hover:text-[#C8A24A]"
             >
               Contact
@@ -132,117 +128,114 @@ export default function Navbar() {
           </nav>
 
           {/* Right */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <button className="hidden rounded-xl bg-[#0B2A5B] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#081F45] sm:flex">
               Get Started →
             </button>
 
             <button
               onClick={() => setMobileMenu(!mobileMenu)}
-              className="rounded-xl bg-[#0B2A5B]/10 p-2 text-[#0B2A5B] transition hover:bg-[#0B2A5B] hover:text-white lg:hidden"
+              className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#0B2A5B]/10 text-[#0B2A5B] transition hover:bg-[#0B2A5B] hover:text-white lg:hidden"
+              aria-label="Toggle menu"
             >
-              {mobileMenu ? <X size={24} /> : <Menu size={24} />}
+              {mobileMenu ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         <div
-          className={`overflow-hidden transition-all duration-300 lg:hidden ${
+          className={`overflow-hidden transition-all duration-300 ease-in-out lg:hidden ${
             mobileMenu
-              ? "mt-3 max-h-[600px] opacity-100"
+              ? "mt-2 max-h-[70vh] opacity-100"
               : "max-h-0 opacity-0"
           }`}
         >
-          <div className="rounded-2xl border border-[#C8A24A]/20 bg-white shadow-xl">
+          <div className="max-h-[70vh] overflow-y-auto rounded-2xl border border-[#C8A24A]/20 bg-white shadow-xl">
             <a
               href="/"
-              className="block border-b px-6 py-4 font-medium text-[#0B2A5B]"
+              className="block border-b border-gray-100 px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B] transition active:bg-gray-50"
             >
               Home
             </a>
 
             <a
               href="/about"
-              className="block border-b px-6 py-4 hover:bg-gray-50"
+              className="block border-b border-gray-100 px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B] transition active:bg-gray-50"
             >
               About
             </a>
 
-            <details className="border-b">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-4">
+            <details className="border-b border-gray-100 group">
+              <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B]">
                 Services
-                <ChevronDown size={18} />
+                <ChevronDown size={18} className="transition-transform duration-200 group-open:rotate-180" />
               </summary>
 
               <div className="bg-[#F8FAFC]">
                 <a
-                  href="/our-services"
-                  className="block px-10 py-3 hover:text-[#C8A24A]"
+                  href="/our-service"
+                  className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Our Services
                 </a>
 
                 <a
                   href="/service-details"
-                  className="block px-10 py-3 hover:text-[#C8A24A]"
+                  className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Services Details
                 </a>
-
-               
               </div>
             </details>
 
-            <details className="border-b">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-4">
+            <details className="border-b border-gray-100 group">
+              <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B]">
                 Projects
-                <ChevronDown size={18} />
+                <ChevronDown size={18} className="transition-transform duration-200 group-open:rotate-180" />
               </summary>
 
               <div className="bg-[#F8FAFC]">
                 <a
                   href="/our-projects"
-                  className="block px-10 py-3 hover:text-[#C8A24A]"
+                  className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Our Projects
                 </a>
 
                 <a
                   href="/project-details"
-                  className="block px-10 py-3 hover:text-[#C8A24A]"
+                  className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Projects Details
                 </a>
-
-              
               </div>
             </details>
 
-            <details className="border-b">
-              <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-4">
+            <details className="border-b border-gray-100 group">
+              <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B]">
                 Pages
-                <ChevronDown size={18} />
+                <ChevronDown size={18} className="transition-transform duration-200 group-open:rotate-180" />
               </summary>
 
               <div className="bg-[#F8FAFC]">
                 <a
-                  href="#"
-                  className="block px-10 py-3 hover:text-[#C8A24A]"
+                  href="/pricing"
+                  className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Pricing
                 </a>
 
                 <a
-                  href="#"
-                  className="block px-10 py-3 hover:text-[#C8A24A]"
+                  href="/team"
+                  className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Team
                 </a>
 
                 <a
                   href="/faqs"
-                  className="block px-10 py-3 hover:text-[#C8A24A]"
+                  className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   FAQs
                 </a>
@@ -251,13 +244,13 @@ export default function Navbar() {
 
             <a
               href="/contact"
-              className="block border-b px-6 py-4 hover:bg-gray-50"
+              className="block border-b border-gray-100 px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B] transition active:bg-gray-50"
             >
               Contact
             </a>
 
-            <div className="p-5">
-              <button className="w-full rounded-xl bg-[#0B2A5B] py-3 font-semibold text-white transition hover:bg-[#081F45]">
+            <div className="p-4">
+              <button className="w-full rounded-xl bg-[#0B2A5B] py-3.5 text-[15px] font-semibold text-white transition hover:bg-[#081F45] active:bg-[#061830]">
                 Get Started →
               </button>
             </div>

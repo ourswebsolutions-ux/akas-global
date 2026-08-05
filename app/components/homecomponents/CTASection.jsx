@@ -113,7 +113,7 @@ export default function CTASection() {
               }}
             >
               Save Money.
-              <br />
+              
               Save the Planet.
               <br />
               Start with EcoWatts.

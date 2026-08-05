@@ -42,6 +42,73 @@ const faqs = [
   },
 ];
 
+const headerVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const subHeaderVariants = {
+  hidden: { opacity: 0, y: 28 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.65,
+      ease: [0.22, 1, 0.36, 1],
+      delay: 0.12,
+    },
+  },
+};
+
+const descriptionVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
+      delay: 0.22,
+    },
+  },
+};
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: (i) => ({
+    opacity: 0,
+    x: i % 2 === 0 ? -48 : 48,
+    y: 16,
+  }),
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 90,
+      damping: 18,
+      mass: 0.8,
+    },
+  },
+};
+
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(0);
 
@@ -50,52 +117,82 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-white w-full">
-      <div className="max-w-[1280px] mx-auto px-6 pt-[90px] pb-[90px]">
-        <div className="flex flex-col items-center text-center">
-          <p className="text-[12px] font-bold uppercase tracking-[0.35em] text-[#16291E] mb-[26px]">
+    <section className="bg-white w-full overflow-x-hidden">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 pt-[60px] sm:pt-[90px] pb-[60px] sm:pb-[90px]">
+        <motion.div
+          className="flex flex-col items-center text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <motion.p
+            variants={headerVariants}
+            className="text-[11px] sm:text-[12px] font-bold uppercase tracking-[0.35em] text-[#0B2A5B] mb-[18px] sm:mb-[26px]"
+          >
             FAQs
-          </p>
-          <h2 className="text-[32px] md:text-[42px] lg:text-[52px] font-extrabold leading-[1.05] tracking-[-0.03em] text-[#16291E] max-w-[1100px]">
+          </motion.p>
+          <motion.h2
+            variants={subHeaderVariants}
+            className="text-[26px] sm:text-[32px] md:text-[42px] lg:text-[52px] font-extrabold leading-[1.15] sm:leading-[1.05] tracking-[-0.03em] text-[#102A43] max-w-[1100px] px-1"
+          >
             Your Solar Journey, Made Simple
-          </h2>
-          <p className="text-[18px] font-normal leading-[1.8] text-[#6B7280] max-w-[900px] mt-[28px] mb-[70px]">
+          </motion.h2>
+          <motion.p
+            variants={descriptionVariants}
+            className="text-[15px] sm:text-[18px] font-normal leading-[1.7] sm:leading-[1.8] text-[#102A43]/80 max-w-[900px] mt-[20px] sm:mt-[28px] mb-[48px] sm:mb-[70px] px-1"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="w-full max-w-[920px] mx-auto flex flex-col gap-[10px]">
+        <motion.div
+          className="w-full max-w-[920px] mx-auto flex flex-col gap-[8px] sm:gap-[10px]"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
-              <div key={index} className="w-full">
-                <button
+              <motion.div
+                key={index}
+                className="w-full"
+                custom={index}
+                variants={itemVariants}
+              >
+                <motion.button
                   onClick={() => toggle(index)}
-                  className={`w-full h-[66px] rounded-[10px] px-[28px] flex items-center justify-between transition-colors duration-300 ${
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.985 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                  className={`w-full min-h-[56px] sm:h-[66px] rounded-[10px] px-4 sm:px-[28px] py-3 sm:py-0 flex items-center justify-between transition-colors duration-300 shadow-sm ${
                     isOpen
-                      ? "bg-[#83B95F]"
-                      : "bg-[#83B95F] hover:bg-[#72A852]"
+                      ? "bg-gradient-to-r from-[#0B2A5B] to-[#0B2A5B] shadow-[0_4px_20px_rgba(11,42,91,0.18)]"
+                      : "bg-[#0B2A5B] hover:bg-[#0d326b]"
                   }`}
                 >
-                  <span className="text-white text-[20px] font-bold leading-[1.3] text-left">
+                  <span className="text-white text-[15px] sm:text-[20px] font-bold leading-[1.35] sm:leading-[1.3] text-left pr-3">
                     {faq.question}
                   </span>
                   <motion.div
                     animate={{
                       rotate: isOpen ? 180 : 0,
                     }}
-                    whileHover={!isOpen ? { rotate: 15 } : {}}
-                    transition={{ duration: 0.35, ease: "easeInOut" }}
+                    whileHover={!isOpen ? { rotate: 12, scale: 1.1 } : {}}
+                    transition={{ type: "spring", stiffness: 260, damping: 20 }}
                     className="flex-shrink-0"
                   >
                     <ChevronDown
-                      size={22}
+                      size={20}
                       strokeWidth={2}
-                      className="text-white"
+                      className={`sm:w-[22px] sm:h-[22px] ${
+                        isOpen ? "text-[#D8B868]" : "text-[#C8A24A]"
+                      }`}
                     />
                   </motion.div>
-                </button>
+                </motion.button>
 
                 <AnimatePresence initial={false}>
                   {isOpen && (
@@ -103,21 +200,24 @@ export default function FAQSection() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.35, ease: "easeInOut" }}
+                      transition={{
+                        height: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
+                        opacity: { duration: 0.3, ease: "easeOut" },
+                      }}
                       className="overflow-hidden"
                     >
-                      <div className="bg-white px-[28px] py-[28px] rounded-b-[10px]">
-                        <p className="text-[18px] leading-[1.8] text-[#6B7280]">
+                      <div className="bg-[#F8FAFC] px-4 sm:px-[28px] py-5 sm:py-[28px] rounded-b-[10px] border border-t-0 border-[#E5E7EB]">
+                        <p className="text-[15px] sm:text-[18px] leading-[1.7] sm:leading-[1.8] text-[#102A43]/85">
                           {faq.answer}
                         </p>
                       </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
