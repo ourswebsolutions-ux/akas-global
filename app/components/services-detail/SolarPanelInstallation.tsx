@@ -3,71 +3,83 @@
 
 "use client";
 
-
 import { motion, type Variants } from "framer-motion";
-const fadeUp = {
+
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring" as const, stiffness: 90, damping: 18, mass: 0.8 },
+    transition: { type: "spring", stiffness: 90, damping: 18, mass: 0.8 },
   },
 };
 
-const slideFromLeft = {
+const slideFromLeft: Variants = {
   hidden: { opacity: 0, x: -48 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { type: "spring" as const, stiffness: 85, damping: 18, mass: 0.85 },
+    transition: { type: "spring", stiffness: 85, damping: 18, mass: 0.85 },
   },
 };
 
-const slideFromRight = {
+const slideFromRight: Variants = {
   hidden: { opacity: 0, x: 48 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { type: "spring" as const, stiffness: 85, damping: 18, mass: 0.85 },
+    transition: { type: "spring", stiffness: 85, damping: 18, mass: 0.85 },
   },
 };
 
-const imageReveal = {
+const imageReveal: Variants = {
   hidden: { opacity: 0, scale: 1.06 },
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { type: "spring" as const, stiffness: 70, damping: 20, mass: 1 },
+    transition: { type: "spring", stiffness: 70, damping: 20, mass: 1 },
   },
 };
 
-const scaleFade = {
+const scaleFade: Variants = {
   hidden: { opacity: 0, scale: 0.92 },
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { type: "spring" as const, stiffness: 110, damping: 16 },
+    transition: { type: "spring", stiffness: 110, damping: 16 },
   },
 };
 
-const listItem = {
+const listItem: Variants = {
   hidden: { opacity: 0, x: -16 },
   visible: {
     opacity: 1,
     x: 0,
-    transition: { type: "spring" as const, stiffness: 100, damping: 18 },
+    transition: { type: "spring", stiffness: 100, damping: 18 },
   },
 };
 
-const iconPop = {
+const iconPop: Variants = {
   hidden: { opacity: 0, scale: 0.6 },
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { type: "spring" as const, stiffness: 220, damping: 14 },
+    transition: { type: "spring", stiffness: 220, damping: 14 },
   },
 };
 
+const staggerContainer: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+export default function SolarPanelInstallation() {
   return (
     <div className="min-h-screen bg-white">
       <div className="mx-auto max-w-[1320px] px-4 py-8 sm:px-6 sm:py-10 lg:py-12">
