@@ -1,10 +1,17 @@
-// components/SolarPanelInstallation.jsx
-// or app/solar-panel-installation/page.jsx
-
 "use client";
 
-
 import { motion, type Variants } from "framer-motion";
+
+const staggerContainer: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   visible: {
@@ -68,6 +75,7 @@ const iconPop = {
   },
 };
 
+export default function SolarPanelInstallation() {
   return (
     <div className="min-h-screen bg-white">
       <div className="mx-auto max-w-[1320px] px-4 py-8 sm:px-6 sm:py-10 lg:py-12">
@@ -114,7 +122,7 @@ const iconPop = {
                 />
               </motion.div>
 
-              {/* Overlay Card - sits ON TOP of the image */}
+              {/* Overlay Card */}
               <motion.div
                 className="absolute bottom-[12px] left-[12px] right-[12px] sm:bottom-6 sm:left-6 sm:right-auto sm:w-[78%] md:w-[72%]"
                 variants={slideFromLeft}
@@ -130,7 +138,7 @@ const iconPop = {
               </motion.div>
             </div>
 
-            {/* Two paragraphs below image */}
+            {/* Content paragraphs */}
             <motion.div
               className="mt-6 space-y-4 text-[14px] leading-[1.7] text-[#102A43]/85 sm:mt-8 sm:space-y-5 sm:text-[15px]"
               variants={staggerContainer}
@@ -162,7 +170,7 @@ const iconPop = {
           {/* ================= RIGHT SIDEBAR ================= */}
           <div className="flex flex-col gap-5 sm:gap-6">
             
-            {/* ===== Pricing Card ===== */}
+            {/* Pricing Card */}
             <motion.div
               className="rounded-[20px] bg-gradient-to-br from-[#0B2A5B] to-[#0B2A5B]/90 p-5 shadow-[0_10px_40px_rgba(11,42,91,0.18)] sm:rounded-[24px] sm:p-6"
               variants={slideFromRight}
@@ -170,17 +178,14 @@ const iconPop = {
               whileInView="visible"
               viewport={{ once: true, amount: 0.25 }}
             >
-              {/* START FROM label */}
               <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#D8B868]">
                 Start From
               </p>
 
-              {/* Price */}
               <p className="mt-1 text-[36px] font-bold leading-none tracking-tight text-white sm:text-[48px]">
                 $4,500
               </p>
 
-              {/* White inner card - Package Inclusions */}
               <div className="mt-5 rounded-[14px] bg-[#F8FAFC] px-4 py-4 sm:mt-6 sm:rounded-[16px] sm:px-5 sm:py-5">
                 <h3 className="mb-3 text-[14px] font-bold text-[#102A43] sm:mb-4 sm:text-[15px]">
                   Package Inclusions :
@@ -218,7 +223,6 @@ const iconPop = {
                 </motion.ul>
               </div>
 
-              {/* Book Now button */}
               <motion.button
                 type="button"
                 className="mt-4 flex w-full items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#C8A24A] to-[#D8B868] py-[13px] text-[14px] font-medium text-[#0B2A5B] shadow-[0_4px_16px_rgba(200,162,74,0.35)] transition-all duration-300 hover:shadow-[0_6px_22px_rgba(200,162,74,0.45)] sm:mt-5 sm:py-[14px] sm:text-[15px]"
@@ -234,7 +238,7 @@ const iconPop = {
               </motion.button>
             </motion.div>
 
-            {/* ===== Our Services Card ===== */}
+            {/* Our Services Card */}
             <motion.div
               className="rounded-[16px] border border-[#E5E7EB] bg-[#F8FAFC] px-5 py-5 sm:rounded-[20px] sm:px-6 sm:py-6"
               variants={slideFromRight}
