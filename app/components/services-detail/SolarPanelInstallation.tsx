@@ -2,21 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 
-<<<<<<< HEAD
 const fadeUp: Variants = {
-=======
-const staggerContainer: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const fadeUp = {
->>>>>>> dd0cbdcd8ea3cd8697182deedd6dbe11d3ee3944
   hidden: { opacity: 0, y: 28 },
   visible: {
     opacity: 1,
@@ -79,7 +65,6 @@ const iconPop: Variants = {
   },
 };
 
-<<<<<<< HEAD
 const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -91,8 +76,6 @@ const staggerContainer: Variants = {
   },
 };
 
-=======
->>>>>>> dd0cbdcd8ea3cd8697182deedd6dbe11d3ee3944
 export default function SolarPanelInstallation() {
   return (
     <div className="min-h-screen bg-white">
