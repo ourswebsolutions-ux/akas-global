@@ -7,39 +7,39 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const faqs = [
   {
-    question: 'How long does it take to install a solar system?',
+    question: 'How long does a typical construction project take?',
     answer:
       'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast',
   },
   {
-    question: 'Will solar panels work during cloudy or rainy days?',
+    question: 'Will work continue during rainy or harsh weather?',
     answer:
-      'Yes, solar panels still generate electricity on cloudy and rainy days, though at reduced efficiency. Modern panels are designed to capture diffuse light effectively.',
+      'Yes, most exterior work pauses in severe weather for safety, while interior tasks continue. Schedules are adjusted to keep overall progress on track.',
   },
   {
-    question: "What's the lifespan of solar panels?",
+    question: "What's the lifespan of modern structures?",
     answer:
-      'Most solar panels come with a 25–30 year performance warranty and can continue producing electricity well beyond that period with proper care.',
+      'Most well-built structures last 50–100 years or more with proper design, quality materials, and regular maintenance over their service life.',
   },
   {
-    question: 'How much can I save with solar?',
+    question: 'How much can I save with efficient design?',
     answer:
-      'Savings depend on your location, energy usage, and system size. Many homeowners reduce their electricity bills by 50–90% after switching to solar.',
+      'Savings depend on design choices, materials, and scale. Many clients reduce long-term costs by 20–40% through smart engineering and planning.',
   },
   {
-    question: 'Do I need batteries for my solar system?',
+    question: 'Do I need full project management support?',
     answer:
-      'Batteries are optional. They provide backup power and energy independence, but a grid-tied system without batteries still delivers significant savings.',
+      'Project management is optional but recommended. It ensures coordination, timeline control, and clear communication from start to finish.',
   },
   {
-    question: 'Can I expand my system later?',
+    question: 'Can I expand the project later?',
     answer:
-      'Yes. Most systems are designed to be expandable. You can add more panels or battery storage as your energy needs grow.',
+      'Yes. Most designs allow for future expansion. You can add phases or extra space as your needs and budget grow over time.',
   },
   {
     question: 'What kind of maintenance is required?',
     answer:
-      'Solar systems require minimal maintenance. Occasional cleaning and an annual inspection are usually sufficient to keep them performing optimally.',
+      'Structures need periodic inspections and upkeep. Routine checks and timely repairs help maintain safety, appearance, and long-term value.',
   },
 ];
 
@@ -130,7 +130,7 @@ export default function FAQSection() {
               variants={fadeUp}
               className="text-[28px] sm:text-[42px] md:text-[56px] lg:text-[38px] font-extrabold leading-[1.15] sm:leading-[1.02] text-[#102A43] max-w-[580px] mb-5 sm:mb-6"
             >
-              Your Solar Journey,
+              Your Building Journey,
               <br />
               Made Simple
             </motion.h2>
@@ -140,8 +140,7 @@ export default function FAQSection() {
               variants={fadeUp}
               className="text-[15px] sm:text-[18px] leading-[1.7] sm:leading-[1.75] text-[#102A43]/80 max-w-[620px] mb-8 sm:mb-12"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-              ullamcorper mattis, pulvinar dapibus leo.
+              Clear answers to common questions about construction timelines, costs, quality, and project delivery.
             </motion.p>
 
             {/* IMAGE */}
@@ -153,8 +152,8 @@ export default function FAQSection() {
               className="w-full mt-2"
             >
               <Image
-                src="/faq.jpg"
-                alt="Solar installation team"
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=580&q=80"
+                alt="Construction project team"
                 width={580}
                 height={330}
                 className="w-full h-[240px] sm:h-[330px] object-cover rounded-[20px] sm:rounded-[26px]"

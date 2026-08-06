@@ -6,39 +6,39 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "How long does it take to install a solar system?",
+    question: "How long does a typical construction project take?",
     answer:
-      "Most residential solar installations are completed in 1 to 3 days once permits are approved. The exact timeline depends on system size, roof complexity, and local inspection schedules. Our team handles all paperwork so you can enjoy clean energy with minimal disruption.",
+      "Most residential builds are completed in 3 to 9 months once permits are approved. The exact timeline depends on project size, site conditions, and local inspection schedules. Our team handles all coordination so you can enjoy a smooth process with minimal disruption.",
   },
   {
-    question: "Will solar panels work during cloudy or rainy days?",
+    question: "Will work continue during rainy or harsh weather?",
     answer:
-      "Yes. Solar panels still generate electricity on cloudy and rainy days, though at a reduced output. Modern panels are highly efficient and continue producing power even in diffuse light. Over the course of a year, weather variations are already factored into your system’s performance estimates.",
+      "Yes. Exterior work may pause in severe weather for safety, while interior tasks continue. Schedules are adjusted carefully so overall progress stays on track. Weather delays are factored into planning from the start of every project.",
   },
   {
-    question: "What’s the lifespan of solar panels?",
+    question: "What’s the lifespan of modern structures?",
     answer:
-      "Quality solar panels are designed to last 25 to 30 years or more. Most manufacturers provide a 25-year performance warranty guaranteeing at least 80–85% of original output. With proper care, many systems continue producing clean energy well beyond three decades.",
+      "Quality structures are designed to last 50 to 100 years or more. Proper design, materials, and regular maintenance ensure long-term performance. With good care, many buildings remain strong and functional well beyond several decades.",
   },
   {
-    question: "How much can I save with solar?",
+    question: "How much can I save with efficient design?",
     answer:
-      "Savings vary based on your energy usage, local electricity rates, and available incentives. Most homeowners see a significant reduction in monthly utility bills and achieve full payback within 6–10 years. After that, the electricity your system produces is essentially free for the remaining life of the panels.",
+      "Savings vary based on design choices, materials, and project scale. Most clients reduce long-term costs through smart engineering and planning. Efficient layouts and quality builds often deliver strong value over the life of the structure.",
   },
   {
-    question: "Do I need batteries for my solar system?",
+    question: "Do I need full project management support?",
     answer:
-      "Batteries are optional. A grid-tied system without storage still offsets your daytime usage and can earn credits through net metering. Adding batteries provides backup power during outages and greater energy independence, but is not required for a fully functional solar installation.",
+      "Project management is optional but highly recommended. It ensures clear coordination, timeline control, and communication from start to finish. You can still proceed without it, but dedicated management reduces risk and keeps delivery on schedule.",
   },
   {
-    question: "Can I expand my system later?",
+    question: "Can I expand the project later?",
     answer:
-      "Yes. Most systems are designed with future expansion in mind. Additional panels can usually be added to the same inverter or with a second inverter, provided your roof space and electrical service can support the increased capacity. We’ll help you plan for growth from day one.",
+      "Yes. Most designs allow for future expansion. Additional phases or space can usually be added when needs and budget grow. We’ll help you plan for growth from day one so future work integrates smoothly with the original structure.",
   },
   {
     question: "What kind of maintenance is required?",
     answer:
-      "Solar panels require very little maintenance. Occasional rain usually keeps them clean, though a gentle rinse a couple of times a year can help in dusty areas. We recommend an annual visual inspection and professional check-up to ensure optimal performance and catch any issues early.",
+      "Structures need periodic inspections and routine upkeep. Occasional checks and timely repairs help maintain safety, appearance, and value. We recommend an annual review to ensure optimal performance and catch any issues early.",
   },
 ];
 
@@ -135,14 +135,13 @@ export default function FAQSection() {
             variants={subHeaderVariants}
             className="text-[26px] sm:text-[32px] md:text-[42px] lg:text-[52px] font-extrabold leading-[1.15] sm:leading-[1.05] tracking-[-0.03em] text-[#102A43] max-w-[1100px] px-1"
           >
-            Your Solar Journey, Made Simple
+            Your Building Journey, Made Simple
           </motion.h2>
           <motion.p
             variants={descriptionVariants}
             className="text-[15px] sm:text-[18px] font-normal leading-[1.7] sm:leading-[1.8] text-[#102A43]/80 max-w-[900px] mt-[20px] sm:mt-[28px] mb-[48px] sm:mb-[70px] px-1"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Clear answers to common questions about construction timelines, costs, quality, and project delivery.
           </motion.p>
         </motion.div>
 

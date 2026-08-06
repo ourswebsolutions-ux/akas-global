@@ -18,8 +18,8 @@ export default function CorporateHeadquartersPage() {
             {/* LEFT — Image */}
             <div className="relative w-full overflow-hidden rounded-2xl">
               <Image
-                src="/porjectdetail.jpg" // replace with your actual image path
-                alt="Workers installing solar panels on corporate rooftop"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+                alt="Workers on corporate headquarters construction site"
                 width={800}
                 height={500}
                 className="w-full h-auto object-cover rounded-2xl"
@@ -35,39 +35,39 @@ export default function CorporateHeadquartersPage() {
 
               <div className="space-y-3.5 text-[14.5px] leading-relaxed">
                 <div className="flex">
-                  <span className="w-[138px] shrink-0 text-[#6B7280]">System Type</span>
+                  <span className="w-[138px] shrink-0 text-[#6B7280]">Structure Type</span>
                   <span className="text-[#6B7280] mr-1.5">:</span>
-                  <span className="text-[#374151]">On-Grid Solar PV System</span>
+                  <span className="text-[#374151]">Reinforced Concrete Frame</span>
                 </div>
 
                 <div className="flex">
-                  <span className="w-[138px] shrink-0 text-[#6B7280]">Panel Capacity</span>
+                  <span className="w-[138px] shrink-0 text-[#6B7280]">Total Area</span>
                   <span className="text-[#6B7280] mr-1.5">:</span>
-                  <span className="text-[#374151]">550W per panel</span>
+                  <span className="text-[#374151]">12,500 m²</span>
                 </div>
 
                 <div className="flex">
-                  <span className="w-[138px] shrink-0 text-[#6B7280]">Number of Panels</span>
+                  <span className="w-[138px] shrink-0 text-[#6B7280]">Number of Floors</span>
                   <span className="text-[#6B7280] mr-1.5">:</span>
-                  <span className="text-[#374151]">320 panels</span>
+                  <span className="text-[#374151]">8 floors</span>
                 </div>
 
                 <div className="flex">
-                  <span className="w-[138px] shrink-0 text-[#6B7280]">Battery Storage</span>
+                  <span className="w-[138px] shrink-0 text-[#6B7280]">Foundation Type</span>
                   <span className="text-[#6B7280] mr-1.5">:</span>
-                  <span className="text-[#374151]">200 kWh Lithium-Ion Storage System</span>
+                  <span className="text-[#374151]">Deep Pile Foundation System</span>
                 </div>
 
                 <div className="flex">
-                  <span className="w-[138px] shrink-0 text-[#6B7280]">Estimated Savings</span>
+                  <span className="w-[138px] shrink-0 text-[#6B7280]">Estimated Value</span>
                   <span className="text-[#6B7280] mr-1.5">:</span>
-                  <span className="text-[#374151]">± $45,000/year on electricity costs</span>
+                  <span className="text-[#374151]">± $12,500,000 total project cost</span>
                 </div>
 
                 <div className="flex">
-                  <span className="w-[138px] shrink-0 text-[#6B7280]">Installation Time</span>
+                  <span className="w-[138px] shrink-0 text-[#6B7280]">Construction Time</span>
                   <span className="text-[#6B7280] mr-1.5">:</span>
-                  <span className="text-[#374151]">6 Weeks</span>
+                  <span className="text-[#374151]">18 Months</span>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function CorporateHeadquartersPage() {
               Project Overview
             </h2>
             <p className="text-[15px] sm:text-[15.5px] leading-[1.65] text-[#6B7280] max-w-4xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a nibh non elit lobortis pretium. Fusce massa mauris, mollis maximus lectus quis, interdum accumsan augue. Pellentesque suscipit iaculis nulla et bibendum. Aenean eu ligula justo. Aliquam quis metus nulla. Duis porta eleifend rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus in tincidunt neque, bibendum consectetur elit.
+              A modern corporate headquarters delivered with precision engineering and quality materials. The project combines efficient floor plates, durable structural systems, and carefully planned circulation for long-term operational performance and comfort.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function CorporateHeadquartersPage() {
               Project Implementation
             </h2>
             <p className="text-[15px] sm:text-[15.5px] leading-[1.65] text-[#6B7280] max-w-4xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a nibh non elit lobortis pretium. Fusce massa mauris, mollis maximus lectus quis, interdum accumsan augue. Pellentesque suscipit iaculis nulla et bibendum. Aenean eu ligula justo. Aliquam quis metus nulla. Duis porta eleifend rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus in tincidunt neque, bibendum consectetur elit.
+              Works progressed through coordinated phases of foundation, structure, envelope, and fit-out. Strict quality control, safety protocols, and schedule management ensured on-time delivery while meeting the client’s technical and design requirements throughout.
             </p>
           </div>
 
@@ -103,10 +103,10 @@ export default function CorporateHeadquartersPage() {
             {/* Left column */}
             <div>
               <h2 className="text-[22px] sm:text-[23px] font-bold text-[#111827] mb-3.5">
-                Sustainability Impact
+                Quality Impact
               </h2>
               <p className="text-[15px] sm:text-[15.5px] leading-[1.65] text-[#6B7280]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a nibh non elit lobortis pretium. Fusce massa mauris, mollis maximus lectus quis, interdum accumsan augue. Pellentesque suscipit iaculis nulla et bibendum. Aenean eu ligula justo. Aliquam quis metus nulla. Duis porta eleifend rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus in tincidunt neque, bibendum consectetur elit.
+                High-grade materials and rigorous testing delivered a robust, low-maintenance building. Efficient systems and durable finishes support reduced lifecycle costs and reliable performance for decades of corporate use.
               </p>
             </div>
 
@@ -116,7 +116,7 @@ export default function CorporateHeadquartersPage() {
                 Client Experience
               </h2>
               <p className="text-[15px] sm:text-[15.5px] leading-[1.65] text-[#6B7280]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a nibh non elit lobortis pretium. Fusce massa mauris, mollis maximus lectus quis, interdum accumsan augue. Pellentesque suscipit iaculis nulla et bibendum. Aenean eu ligula justo. Aliquam quis metus nulla. Duis porta eleifend rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus in tincidunt neque, bibendum consectetur elit.
+                Clear communication, transparent progress reporting, and responsive coordination kept stakeholders aligned. The client received a finished headquarters that matched expectations for quality, timeline, and overall project value.
               </p>
             </div>
           </div>

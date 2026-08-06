@@ -8,25 +8,25 @@ const values = [
     icon: Leaf,
     title: 'Sustainability',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+      'We build with lasting materials and responsible practices that support long-term performance and value.',
   },
   {
     icon: Zap,
     title: 'Innovation',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+      'We apply modern methods and smart solutions to deliver efficient, high-quality construction results.',
   },
   {
     icon: Handshake,
     title: 'Integrity',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+      'We uphold transparency and trust in every project, from planning through final delivery and beyond.',
   },
   {
     icon: Wrench,
     title: 'Quality',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+      'We maintain rigorous standards so every structure is built to last with precision and care.',
   },
 ];
 
@@ -99,8 +99,7 @@ export default function ValuesSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-[14px] sm:text-[16px] font-normal leading-[1.7] sm:leading-[1.8] text-[#102A43]/80 max-w-[900px] mt-5 sm:mt-[30px] mb-10 sm:mb-[70px] px-2"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Our core principles guide every project we deliver with precision, care, and lasting quality.
           </motion.p>
         </div>
 

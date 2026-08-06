@@ -6,40 +6,40 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=900&auto=format&fit=crop",
-    capacity: "300 kWp",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=900&auto=format&fit=crop",
+    capacity: "12,500 m²",
     type: "Corporate",
-    system: "Hybrid Solar + Battery Storage",
+    system: "Reinforced Concrete Frame",
     title: "Corporate Headquarters",
     location: "Jakarta, Indonesia",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    description: "Complete structural and fit-out delivery for a modern corporate campus built to exacting standards.",
   },
   {
-    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=900&auto=format&fit=crop",
-    capacity: "270 kWp",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=900&auto=format&fit=crop",
+    capacity: "8,400 m²",
     type: "Private Hospitality",
-    system: "Off-Grid Solar + Battery Bank",
+    system: "Full Turnkey Construction",
     title: "Eco-Luxury Resort",
     location: "Nusa Penida, Indonesia",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    description: "Seamless resort construction delivering refined spaces with durable materials and precise detailing.",
   },
   {
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=900&auto=format&fit=crop",
-    capacity: "500 kWp",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=900&auto=format&fit=crop",
+    capacity: "18,000 m²",
     type: "Corporate",
-    system: "Grid-Tied Solar PV",
-    title: "Industrial Solar Deployment",
+    system: "Steel Frame Construction",
+    title: "Industrial Complex Build",
     location: "Cikarang, Indonesia",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    description: "Large-scale industrial facility engineered for efficiency, safety, and long-term operational strength.",
   },
   {
-    image: "https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?q=80&w=900&auto=format&fit=crop",
-    capacity: "800 kWp",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=900&auto=format&fit=crop",
+    capacity: "25,000 m²",
     type: "Commercial",
-    system: "Grid-Tied Solar PV",
-    title: "Shopping Mall Solar Integration",
+    system: "Complete Structural Build",
+    title: "Shopping Mall Development",
     location: "Osaka, Japan",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+    description: "Integrated commercial construction delivering high-traffic spaces with robust structural performance.",
   },
 ];
 
@@ -49,8 +49,8 @@ export default function ProjectsSection() {
       {/* Fixed Background Layer */}
       <div className="fixed inset-0 -z-10">
         <Image
-          src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2400&auto=format&fit=crop"
-          alt="Wind turbines background"
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2400&auto=format&fit=crop"
+          alt="Construction site background"
           fill
           className="object-cover object-center"
           priority
@@ -112,7 +112,7 @@ export default function ProjectsSection() {
               },
             }}
           >
-            Turning Bright Ideas into Brighter Futures.
+            Turning Bold Ideas into Strong Structures.
           </motion.h2>
 
           <motion.p
@@ -130,7 +130,7 @@ export default function ProjectsSection() {
               },
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Expert construction and engineering projects delivered with precision across commercial and industrial sites.
           </motion.p>
 
           <motion.button

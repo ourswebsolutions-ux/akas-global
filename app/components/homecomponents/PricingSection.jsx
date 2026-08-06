@@ -62,41 +62,41 @@ const listItem = {
 export default function PricingSection() {
   const plans = [
     {
-      name: 'GREEN START',
-      description: 'Affordable entry to clean energy',
+      name: 'FOUNDATION',
+      description: 'Affordable entry to quality builds',
       price: '1,999',
-      button: 'Choose Green Start',
-      featuresTitle: 'Green Start Plan Include:',
+      button: 'Choose Foundation',
+      featuresTitle: 'Foundation Plan Include:',
       features: [
-        '2-4 kWp solar panels',
-        'Grid-connected system',
-        'Mobile monitoring access',
-        '1-year warranty & maintenance',
+        'Basic structural design',
+        'Site preparation package',
+        'Project progress updates',
+        '1-year warranty & support',
       ],
     },
     {
-      name: 'SOLAR PLUS',
-      description: 'Balanced power & savings',
+      name: 'STRUCTURE PLUS',
+      description: 'Balanced scope & value',
       price: '4,999',
-      button: 'Choose Solar Plus',
-      featuresTitle: 'Solar Plus Plan Include:',
+      button: 'Choose Structure Plus',
+      featuresTitle: 'Structure Plus Plan Include:',
       features: [
-        '5-8 kWp solar panels',
-        'Hybrid system with battery backup',
-        'Smart energy management app',
-        '3-year warranty & maintenance',
+        'Full structural engineering',
+        'Turnkey build with fit-out',
+        'Dedicated project manager',
+        '3-year warranty & support',
       ],
     },
     {
-      name: 'ECO MAX',
-      description: 'Maximum efficiency for big savings',
+      name: 'ELITE BUILD',
+      description: 'Maximum quality for major projects',
       price: '8,999',
-      button: 'Choose Eco Max',
-      featuresTitle: 'Eco Max Plan Include:',
+      button: 'Choose Elite Build',
+      featuresTitle: 'Elite Build Plan Include:',
       features: [
-        '10-15 kWp solar panels',
-        'High-capacity battery storage',
-        'AI powered performance optimization',
+        'Premium structural package',
+        'Complete site management',
+        'Priority schedule & reporting',
         '5-year premium maintenance',
       ],
     },
@@ -123,7 +123,7 @@ export default function PricingSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="max-w-[1150px] text-[28px] sm:text-[40px] md:text-[50px] font-bold leading-[1.15] sm:leading-[1.05] tracking-[-0.02em] text-[#102A43] px-2"
           >
-            Choose the Plan That Powers Your Future
+            Choose the Plan That Builds Your Future
           </motion.h2>
 
           <motion.p
@@ -133,7 +133,7 @@ export default function PricingSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="mt-5 sm:mt-[24px] mb-10 sm:mb-[60px] max-w-[900px] text-[14px] sm:text-[16px] leading-[1.7] sm:leading-[1.8] text-[#102A43]/80 px-2"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Flexible construction packages tailored for residential, commercial, and industrial projects of every scale.
           </motion.p>
         </div>
 

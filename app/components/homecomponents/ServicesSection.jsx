@@ -46,7 +46,7 @@ export default function ServicesSection() {
               OUR SERVICES
             </p>
             <h2 className="text-[26px] sm:text-[32px] lg:text-[40px] font-extrabold leading-[1.1] sm:leading-[1.05] text-[#0B2A5B]">
-              Smarter Energy Starts
+              Smarter Building Starts
               <br />
               with Smarter Service.
             </h2>
@@ -70,7 +70,7 @@ export default function ServicesSection() {
             }}
           >
             <p className="text-[#102A43]/70 text-[14px] sm:text-[16px] leading-[1.7] mb-5 sm:mb-6 text-left lg:text-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus .
+              Expert construction solutions tailored for residential, commercial, and industrial projects with care.
             </p>
             <motion.button
               className="inline-flex items-center gap-2 bg-[#0B2A5B] hover:bg-[#102A43] text-white text-[14px] sm:text-[15px] font-semibold px-5 py-2.5 sm:px-6 sm:py-[11px] rounded-full shadow-[0_4px_16px_rgba(11,42,91,0.2)] transition-colors"
@@ -137,8 +137,8 @@ export default function ServicesSection() {
               }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80"
-                alt="Energy Consultation"
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+                alt="Project Consultation"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -174,10 +174,10 @@ export default function ServicesSection() {
               }}
             >
               <h3 className="text-[20px] sm:text-[28px] lg:text-[34px] font-bold text-[#0B2A5B] mb-2 leading-tight">
-                Energy Consultation
+                Project Consultation
               </h3>
               <p className="text-[#102A43]/70 text-[14px] sm:text-[16px] leading-[1.7] mb-3 sm:mb-4 max-w-[280px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Expert guidance for planning construction projects with care.
               </p>
               <div className="flex justify-end">
                 <motion.button
@@ -228,8 +228,8 @@ export default function ServicesSection() {
               }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
-                alt="Solar Panel Installation"
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
+                alt="Building Construction"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -265,10 +265,10 @@ export default function ServicesSection() {
               }}
             >
               <h3 className="text-[20px] sm:text-[28px] lg:text-[34px] font-bold text-[#0B2A5B] mb-2 leading-tight">
-                Solar Panel Installation
+                Building Construction
               </h3>
               <p className="text-[#102A43]/70 text-[14px] sm:text-[16px] leading-[1.7] mb-3 sm:mb-4 max-w-[280px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quality builds delivered on time with skilled craftsmanship.
               </p>
               <div className="flex justify-end">
                 <motion.button
@@ -319,8 +319,8 @@ export default function ServicesSection() {
               }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&q=80"
-                alt="Solar System Design"
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
+                alt="Structural Design"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -356,10 +356,10 @@ export default function ServicesSection() {
               }}
             >
               <h3 className="text-[20px] sm:text-[28px] lg:text-[34px] font-bold text-[#0B2A5B] mb-2 leading-tight">
-                Solar System Design
+                Structural Design
               </h3>
               <p className="text-[#102A43]/70 text-[14px] sm:text-[16px] leading-[1.7] mb-3 sm:mb-4 max-w-[280px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Precise engineering designs built for strength and safety.
               </p>
               <div className="flex justify-end">
                 <motion.button
@@ -414,8 +414,8 @@ export default function ServicesSection() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?w=1200&q=80"
-              alt="Maintenance & Performance Optimization"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+              alt="Maintenance & Quality Optimization"
               fill
               className="object-cover"
               sizes="100vw"
@@ -454,12 +454,12 @@ export default function ServicesSection() {
             <h3 className="text-[20px] sm:text-[28px] lg:text-[34px] font-bold text-[#0B2A5B] mb-2 leading-tight">
               Maintenance &
               <br />
-              Performance
+              Quality
               <br />
               Optimization
             </h3>
             <p className="text-[#102A43]/70 text-[14px] sm:text-[16px] leading-[1.7] mb-3 sm:mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Ongoing care to keep every project performing at its best.
             </p>
             <div className="flex justify-end">
               <motion.button

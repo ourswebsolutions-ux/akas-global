@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-12 border-b border-white/10 gap-8">
           <div>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-2">
-              Stay Bright.
+              Stay Solid.
             </h2>
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#C9A24B]">
               Stay Updated.
@@ -57,9 +57,9 @@ export default function Footer() {
           {/* Col 1: Brand Info & Socials */}
           <div>
             {/* Logo */}
-            <div className="mb-4 select-none">
+            <div className="mb-4 select-none bg-white rounded-lg p-2 w-max">
               <Image
-                src="/logo.png"
+                src="/akaslogo.png"
                 alt="Logo"
                 width={150}
                 height={50}
@@ -68,7 +68,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-[#F5F7FA]/80 mb-6 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Expert construction and engineering services delivering quality, precision, and lasting results on every project.
             </p>
 
             {/* Social Icons */}
@@ -143,33 +143,33 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-[#F5F7FA]/80">
               <li>
-                <Link href="/services/solar-panel-installation" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
+                <Link href="/services/building-construction" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
                   <ChevronRight size={16} className="text-[#C9A24B]" />
-                  <span>Solar Panel Installation</span>
+                  <span>Building Construction</span>
                 </Link>
               </li>
               <li>
-                <Link href="/services/energy-audit" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
+                <Link href="/services/project-consultation" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
                   <ChevronRight size={16} className="text-[#C9A24B]" />
-                  <span>Energy Audit & Consultation</span>
+                  <span>Project Consultation</span>
                 </Link>
               </li>
               <li>
-                <Link href="/services/battery-storage" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
+                <Link href="/services/structural-design" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
                   <ChevronRight size={16} className="text-[#C9A24B]" />
-                  <span>Battery Storage Solutions</span>
+                  <span>Structural Design</span>
                 </Link>
               </li>
               <li>
-                <Link href="/services/smart-monitoring" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
+                <Link href="/services/site-management" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
                   <ChevronRight size={16} className="text-[#C9A24B]" />
-                  <span>Smart Energy Monitoring</span>
+                  <span>Site Management</span>
                 </Link>
               </li>
               <li>
-                <Link href="/services/off-grid-systems" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
+                <Link href="/services/maintenance-support" className="inline-flex items-center gap-2 hover:text-[#C9A24B] transition-colors">
                   <ChevronRight size={16} className="text-[#C9A24B]" />
-                  <span>Off-Grid & Hybrid Systems</span>
+                  <span>Maintenance & Support</span>
                 </Link>
               </li>
             </ul>
@@ -195,8 +195,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail size={18} className="text-[#C9A24B] flex-shrink-0" />
-                <a href="mailto:eco@wattservice.com" className="hover:text-[#C9A24B] transition-colors">
-                  eco@wattservice.com
+                <a href="mailto:info@akas.com" className="hover:text-[#C9A24B] transition-colors">
+                  info@akas.com
                 </a>
               </div>
               <div className="flex items-start gap-3">
@@ -212,7 +212,7 @@ export default function Footer() {
 
         {/* Bottom Sub-footer Copyright */}
         <div className="pt-8 border-t border-white/10 text-center text-xs text-[#F5F7FA]/60">
-          © {new Date().getFullYear()} <span className="font-bold text-white">EcoWatts</span>. All Rights Reserved.
+          © {new Date().getFullYear()} <span className="font-bold text-white">AKAS</span>. All Rights Reserved.
         </div>
 
       </div>

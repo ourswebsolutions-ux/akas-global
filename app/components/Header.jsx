@@ -47,7 +47,7 @@ export default function Navbar() {
                 <ChevronDown size={16} />
               </button>
 
-              <div className="invisible absolute left-0 top-full mt-4 w-56 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute left-0 top-full mt-4 w-56 text-gray-700 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <a
                   href="/our-services"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <ChevronDown size={16} />
               </button>
 
-              <div className="invisible absolute left-0 top-full mt-4 w-56 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute text-gray-700 left-0 top-full mt-4 w-56 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <a
                   href="/our-project"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
@@ -95,7 +95,7 @@ export default function Navbar() {
                 <ChevronDown size={16} />
               </button>
 
-              <div className="invisible absolute left-0 top-full mt-4 w-56 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute text-gray-700 left-0 top-full mt-4 w-56 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
                 <a
                   href="/pricing"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"

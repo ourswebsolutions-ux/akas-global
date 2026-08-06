@@ -20,8 +20,8 @@ export default function HeroSection() {
           }}
         >
           <Image
-            src="/homehero.png"
-            alt="Hero Background Wind Turbine"
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2400&auto=format&fit=crop"
+            alt="Hero Background Construction Site"
             fill
             priority
             sizes="100vw"
@@ -65,7 +65,7 @@ export default function HeroSection() {
                 },
               }}
             >
-              Powering a Greener Tomorrow.
+              Building a Stronger Tomorrow.
             </motion.h1>
 
             <motion.p
@@ -84,8 +84,7 @@ export default function HeroSection() {
                 },
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Expert construction and engineering solutions delivered with precision for lasting results on every project.
             </motion.p>
 
             <motion.button
