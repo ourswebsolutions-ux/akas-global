@@ -333,8 +333,7 @@ function createVariants(
     },
   }
 
-  return (base[preset] || base.default) as Record<string, Variants>
-}
+  return (base[preset] || base.default) as unknown as Record<string, Variants>}
 
 /* =============================================================================
    THEME + LAYOUT RESOLUTION

@@ -30,7 +30,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "app/urnkey-contracting/pagejsx"  ],
   "exclude": [
     "node_modules"
   ]
