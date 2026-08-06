@@ -14,7 +14,7 @@ import {
   FileText,
   Boxes,
   Ruler,
-  Crane,
+  Cone,
 } from 'lucide-react'
 
 export default function Page() {
@@ -98,7 +98,7 @@ export default function Page() {
             'Controlled casting, curing and inspection environments that deliver consistent strength, dimensional accuracy and finish quality.',
         },
         {
-          icon: <Crane />,
+          icon: <Cone />,
           title: 'Erection & Installation',
           description:
             'Lifting plans, temporary works advice and installation supervision for safe, accurate placement on site.',
