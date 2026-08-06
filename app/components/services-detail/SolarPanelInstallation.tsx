@@ -92,7 +92,7 @@ export default function SolarPanelInstallation() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.4 }}
             >
-              Solar Panel Installation
+              Building Construction
             </motion.h1>
 
             {/* Intro paragraph */}
@@ -103,8 +103,7 @@ export default function SolarPanelInstallation() {
               whileInView="visible"
               viewport={{ once: true, amount: 0.4 }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Expert construction delivery for residential, commercial, and industrial projects with precision and care.
             </motion.p>
 
             {/* Featured Image + Overlay Card */}
@@ -117,8 +116,8 @@ export default function SolarPanelInstallation() {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <img
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80"
-                  alt="Solar Panel Installation"
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80"
+                  alt="Building Construction"
                   className="h-[240px] w-full object-cover object-center sm:h-[340px] lg:h-[380px]"
                 />
               </motion.div>
@@ -148,22 +147,10 @@ export default function SolarPanelInstallation() {
               viewport={{ once: true, amount: 0.2 }}
             >
               <motion.p variants={fadeUp}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a
-                nibh non elit lobortis pretium. Fusce massa mauris, mollis maximus
-                lectus quis, interdum accumsan augue. Pellentesque suscipit
-                iaculis nulla et bibendum. Aenean eu ligula justo. Aliquam quis
-                metus nulla. Duis porta eleifend rutrum. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Vivamus in tincidunt neque, bibendum consectetur elit.
-                Nunc eu ultricies est.
+                Our construction teams deliver complete builds from foundation to finish with strict quality control. Every phase is planned, coordinated, and executed to meet schedule, budget, and safety standards for lasting structural performance.
               </motion.p>
               <motion.p variants={fadeUp}>
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Donec sed dapibus ipsum,
-                euismod sodales lacus. Phasellus a elit purus. Cras at
-                pellentesque odio. Donec feugiat lectus non nisl viverra, ut
-                sagittis massa luctus. Vivamus id odio id neque tincidunt varius
-                et quis odio. Etiam fermentum tortor nec molestie sagittis.
+                From commercial campuses to industrial facilities, we manage materials, labour, and site logistics so you receive a finished structure that matches design intent and stands up to long-term operational demands.
               </motion.p>
             </motion.div>
           </div>
@@ -201,11 +188,11 @@ export default function SolarPanelInstallation() {
                 >
                   {[
                     "Site survey & consultation",
-                    "Solar panel & inverter",
-                    "Mounting structure",
-                    "Installation & wiring",
-                    "System testing & commissioning",
-                    "Warranty (10–25 years)",
+                    "Structural design package",
+                    "Foundation & framing",
+                    "Construction & finishing",
+                    "Quality testing & handover",
+                    "Warranty (1–5 years)",
                   ].map((item) => (
                     <motion.li
                       key={item}
@@ -259,12 +246,12 @@ export default function SolarPanelInstallation() {
                 viewport={{ once: true, amount: 0.2 }}
               >
                 {[
-                  "Energy Consultation",
-                  "Solar Panel Installation",
-                  "Solar System Design",
-                  "Maintenance & Performance Optimization",
-                  "Battery Storage Solutions",
-                  "Hybrid & Off-Grid Systems",
+                  "Project Consultation",
+                  "Building Construction",
+                  "Structural Design",
+                  "Maintenance & Quality Optimization",
+                  "Site Management",
+                  "Turnkey Project Delivery",
                 ].map((service) => (
                   <motion.li
                     key={service}

@@ -1,10 +1,57 @@
 "use client";
 
-import Image from "next/image";
-import { Play, ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import { Play, Pause, ArrowRight } from "lucide-react";
+import { motion, useInView } from "framer-motion";
+
+function useCountUp(end, duration = 2000, startWhen = false) {
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    if (!startWhen) return;
+    let startTime = null;
+    let frameId;
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setValue(Math.floor(eased * end));
+      if (progress < 1) {
+        frameId = requestAnimationFrame(animate);
+      } else {
+        setValue(end);
+      }
+    };
+
+    frameId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frameId);
+  }, [end, duration, startWhen]);
+
+  return value;
+}
 
 export default function Stats() {
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const statsRef = useRef(null);
+  const isInView = useInView(statsRef, { once: true, amount: 0.3 });
+
+  const projectsCount = useCountUp(12, 2000, isInView);
+  const sqmCount = useCountUp(25, 2200, isInView);
+
+  const toggleVideo = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      video.pause();
+      setIsPlaying(false);
+    }
+  };
+
   return (
     <section className="relative z-10 -mt-16 sm:-mt-28 md:-mt-36 lg:-mt-40 px-4 sm:px-6 lg:px-12">
       <div className="mx-auto max-w-[1350px]">
@@ -63,7 +110,7 @@ export default function Stats() {
                 },
               }}
             >
-              Empowering with Clean Energy
+              Empowering with Solid Builds
             </motion.h2>
             <motion.p
               className="mt-2.5 sm:mt-4 text-[13px] sm:text-sm leading-relaxed text-[#102A43]/70"
@@ -80,7 +127,7 @@ export default function Stats() {
                 },
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Expert construction solutions for lasting results.
             </motion.p>
 
             <motion.div
@@ -99,19 +146,21 @@ export default function Stats() {
                 },
               }}
             >
-              <Image
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop"
-                alt="Solar panels under blue sky"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 470px"
-                priority
+              <video
+                ref={videoRef}
+                src="https://videos.pexels.com/video-files/3773486/3773486-hd_1920_1080_30fps.mp4"
+                className="absolute inset-0 h-full w-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
               />
-              {/* Centered Play Button */}
+              {/* Centered Play/Pause Button */}
               <motion.button
                 type="button"
+                onClick={toggleVideo}
                 className="absolute left-1/2 top-1/2 flex h-12 w-12 sm:h-16 sm:w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-2 border-white bg-[#C8A24A] shadow-[0_8px_24px_rgba(11,42,91,0.25)] transition-colors duration-300 hover:bg-[#D8B868]"
-                aria-label="Play video"
+                aria-label={isPlaying ? "Pause video" : "Play video"}
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -127,13 +176,18 @@ export default function Stats() {
                 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Play className="ml-1 h-5 w-5 sm:h-7 sm:w-7 fill-white text-white" />
+                {isPlaying ? (
+                  <Pause className="h-5 w-5 sm:h-7 sm:w-7 fill-white text-white" />
+                ) : (
+                  <Play className="ml-1 h-5 w-5 sm:h-7 sm:w-7 fill-white text-white" />
+                )}
               </motion.button>
             </motion.div>
           </motion.div>
 
           {/* CENTER COLUMN - Statistics */}
           <motion.div
+            ref={statsRef}
             className="flex flex-1 flex-col lg:mt-12 items-center justify-center gap-6 sm:gap-12 self-center sm:flex-row sm:gap-[70px] lg:pt-16"
             variants={{
               hidden: { opacity: 0, y: 28 },
@@ -164,10 +218,10 @@ export default function Stats() {
               }}
             >
               <p className="text-[28px] sm:text-[36px] font-bold leading-none text-[#0B2A5B]">
-                12K+
+                {projectsCount}K+
               </p>
               <p className="mt-2 sm:mt-3 text-[11px] lg:text-[10px] md:text-[10px] sm:text-[10px] font-semibold uppercase tracking-wide text-[#102A43]/70">
-                Solar Panels Installed
+                Projects Completed
               </p>
             </motion.div>
             <motion.div
@@ -186,10 +240,10 @@ export default function Stats() {
               }}
             >
               <p className="text-[28px] sm:text-[36px] font-bold leading-none text-[#0B2A5B]">
-                25M+
+                {sqmCount}M+
               </p>
               <p className="mt-2 sm:mt-3 text-[11px] lg:text-[10px] md:text-[10px] sm:text-[10px] font-semibold uppercase tracking-wide text-[#102A43]/70">
-                kWh Energy Generated
+                Sqm Constructed
               </p>
             </motion.div>
           </motion.div>
@@ -234,9 +288,9 @@ export default function Stats() {
             >
               Explore the
               <br />
-              Future of Solar
+              Future of
               <br />
-              Energy
+              Construction
             </motion.h3>
             <motion.button
               type="button"
@@ -261,7 +315,7 @@ export default function Stats() {
               }}
               whileTap={{ scale: 0.97 }}
             >
-              Explore Energy
+              Explore Projects
               <ArrowRight className="h-5 w-5" />
             </motion.button>
           </motion.div>

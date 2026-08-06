@@ -71,7 +71,7 @@ export default function VisionMissionSection() {
                 Our Vision
               </h2>
               <p className="mt-5 sm:mt-[26px] text-[14px] font-normal leading-[1.7] sm:leading-[1.75] text-[#102A43] max-w-[95%] sm:max-w-[90%]">
-                To create a world powered by clean, renewable energy—where every home, business, and community thrives sustainably.
+                To shape a built world of lasting quality—where every home, business, and community stands strong for generations.
               </p>
             </motion.div>
 
@@ -84,7 +84,7 @@ export default function VisionMissionSection() {
                 Our Mission
               </h2>
               <p className="mt-5 sm:mt-[26px] text-[14px] font-normal leading-[1.7] sm:leading-[1.75] text-white max-w-[98%] sm:max-w-[95%]">
-                To deliver innovative, efficient, and reliable solar solutions that empower individuals and organizations to reduce their carbon footprint, save on energy costs, and contribute to a greener planet.
+                To deliver innovative, efficient, and reliable construction solutions that empower clients to build with confidence, achieve lasting value, and create stronger communities.
               </p>
             </motion.div>
           </motion.div>
@@ -105,8 +105,8 @@ export default function VisionMissionSection() {
               className="absolute inset-0"
             >
               <Image
-                src="/value.jpg"
-                alt="Clean energy planning with solar panels and wind turbines"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+                alt="Construction planning with modern buildings and city skyline"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 64vw"

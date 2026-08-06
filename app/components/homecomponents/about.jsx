@@ -45,8 +45,8 @@ export default function AboutUs() {
             }}
           >
             <Image
-              src="/about1.jpg"
-              alt="Engineers at wind turbine site"
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+              alt="Engineers at construction site"
               fill
               sizes="(max-width: 1024px) 100vw, 33vw"
               className="object-cover object-center"
@@ -103,7 +103,7 @@ export default function AboutUs() {
                 },
               }}
             >
-              Green energy,
+              Solid builds,
               <br />
               made easy.
             </motion.h2>
@@ -122,9 +122,9 @@ export default function AboutUs() {
                 },
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Ut elit tellus, luctus nec ullamcorper mattis,
-              pulvinar dapibus leo.
+              Expert construction and engineering delivered
+              with precision, care, and a commitment to
+              lasting quality on every project.
             </motion.p>
             <motion.a
               href="#more-about-us"
@@ -174,8 +174,8 @@ export default function AboutUs() {
           >
             <div className="relative w-full h-[280px] sm:h-[480px] lg:h-[400px] rounded-[28px] overflow-hidden">
               <Image
-                src="/about2.jpg"
-                alt="Solar panels and wind farm"
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
+                alt="Construction site and building work"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover object-center"
@@ -284,7 +284,7 @@ export default function AboutUs() {
               10+
             </div>
             <p className="text-[8px] sm:text-[10px] lg:text-[11px] font-semibold tracking-[0.12em] sm:tracking-[0.16em] text-[#102A43]/70 uppercase">
-              TONS CARBON REDUCE
+              PROJECTS COMPLETED
             </p>
           </motion.div>
 
@@ -314,7 +314,7 @@ export default function AboutUs() {
               2K+
             </div>
             <p className="text-[8px] sm:text-[10px] lg:text-[11px] font-semibold tracking-[0.12em] sm:tracking-[0.16em] text-[#102A43]/70 uppercase">
-              APP USERS
+              CLIENTS SERVED
             </p>
           </motion.div>
 

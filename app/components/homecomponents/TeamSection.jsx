@@ -8,37 +8,37 @@ const teamMembers = [
   {
     name: 'Anaïs Dubois',
     role: 'CLIENT RELATIONS SPECIALIST',
-    image: '/anais.jpg',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
     alt: 'Anaïs Dubois',
   },
   {
     name: 'Rafael Moretti',
     role: 'HEAD OF ENGINEERING',
-    image: '/rafael.jpg',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80',
     alt: 'Rafael Moretti',
   },
   {
     name: 'Greta Kowalska',
-    role: 'ENVIRONMENTAL IMPACT ANALYST',
-    image: '/greta.jpg',
+    role: 'PROJECT QUALITY ANALYST',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80',
     alt: 'Greta Kowalska',
   },
   {
     name: 'Tomás Müller',
     role: 'Quality Assurance Specialist',
-    image: '/Tomás.jpg',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80',
     alt: 'Tomás Müller',
   },
   {
     name: 'Lukas van Dijk',
     role: 'Operations Coordinator',
-    image: '/lukas.jpg',
+    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80',
     alt: 'Lukas van Dijk',
   },
   {
     name: 'Sophie Lindgren',
-    role: 'Senior Solar Design Engineer',
-    image: '/sophie.jpg',
+    role: 'Senior Structural Design Engineer',
+    image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80',
     alt: 'Sophie Lindgren',
   },
 ];
@@ -111,7 +111,7 @@ export default function TeamSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-[28px] sm:text-[40px] md:text-[50px] font-bold leading-[1.15] sm:leading-[1.05] tracking-tight text-[#102A43] max-w-[1050px] px-2"
           >
-            People Who Make Solar Possible
+            People Who Make Projects Possible
           </motion.h2>
 
           <motion.p
@@ -121,7 +121,7 @@ export default function TeamSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="text-[14px] sm:text-[16px] leading-[1.7] sm:leading-[1.8] text-[#102A43]/80 max-w-[900px] mt-4 sm:mt-[26px] px-2"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Dedicated professionals delivering construction excellence through expertise, precision, and teamwork every day.
           </motion.p>
 
           <motion.button

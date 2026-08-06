@@ -15,23 +15,23 @@ const blogPosts = [
   {
     id: 1,
     date: "AUGUST 11, 2025",
-    title: "Solar ROI Explained: When Will You Break Even?",
-    image: "/blog1.jpg",
-    alt: "Workers inspecting solar panels at a wind farm",
+    title: "Project ROI Explained: When Will You Break Even?",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    alt: "Workers inspecting construction progress at a building site",
   },
   {
     id: 2,
     date: "AUGUST 11, 2025",
-    title: "Next-Gen Solar Technologies to Watch in 2025",
-    image: "/blog2.jpg",
-    alt: "Engineers examining solar panels and wind turbines",
+    title: "Next-Gen Construction Methods to Watch in 2025",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    alt: "Engineers examining structural plans and building works",
   },
   {
     id: 3,
     date: "AUGUST 11, 2025",
-    title: "How Solar Can Cut Your Business Energy Costs",
-    image: "/blog3.jpg",
-    alt: "Team celebrating with wind turbines in background",
+    title: "How Smart Design Can Cut Your Project Costs",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    alt: "Team reviewing plans with modern buildings in background",
   },
 ];
 
@@ -230,7 +230,7 @@ export default function BlogSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
         >
-          Bright Ideas for a Greener Tomorrow.
+          Smart Ideas for a Stronger Tomorrow.
         </motion.h2>
 
         {/* Description */}
@@ -241,8 +241,7 @@ export default function BlogSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          Insights on construction trends, project planning, and building smarter for lasting results.
         </motion.p>
 
         {/* Cards Grid */}

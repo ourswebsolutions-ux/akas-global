@@ -110,7 +110,7 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: 'Email',
-      detail: 'eco@wattservice.com',
+      detail: 'info@akas.com',
     },
     {
       icon: Clock,
@@ -184,7 +184,7 @@ export default function ContactSection() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    placeholder="e.g Solar Panel Installation"
+                    placeholder="e.g Building Construction"
                     className="w-full h-[48px] sm:h-[56px] bg-white rounded-[10px] px-4 sm:px-6 text-[14px] sm:text-[16px] text-[#102A43] placeholder:text-[#8B95A5] outline-none focus:ring-2 focus:ring-[#C8A24A]/50 transition-all duration-300"
                   />
                 </div>
@@ -238,7 +238,7 @@ export default function ContactSection() {
               variants={fadeUp}
               className="text-[24px] sm:text-[40px] md:text-[50px] font-bold leading-[1.15] sm:leading-[1.05] tracking-[-0.03em] text-[#0B2A5B] max-w-[560px]"
             >
-              Start Your Solar
+              Start Your Building
               <br />
               Journey Today
             </motion.h2>
@@ -247,8 +247,7 @@ export default function ContactSection() {
               variants={fadeUp}
               className="text-[14px] sm:text-[16px] font-normal leading-[1.7] sm:leading-[1.8] text-[#102A43]/80 max-w-[520px] mt-4 sm:mt-[30px] mb-4 sm:mb-7"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, pulvinar dapibus leo.
+              Reach out for expert construction advice, project planning, and reliable delivery support.
             </motion.p>
 
             <motion.div

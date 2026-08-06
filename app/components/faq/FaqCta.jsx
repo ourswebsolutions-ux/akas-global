@@ -31,7 +31,7 @@ export default function CTASection() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: "url('/ctabg.jpg')",
+              backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2400&auto=format&fit=crop')",
               backgroundAttachment: "fixed",
               backgroundSize: "cover",
               backgroundPosition: "center center",
@@ -41,8 +41,8 @@ export default function CTASection() {
           {/* Optimized next/image fallback layer for loading */}
           <div className="absolute inset-0 z-0 pointer-events-none opacity-0">
             <Image
-              src="/cta-bg.png"
-              alt="Solar farm aerial view"
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2400&auto=format&fit=crop"
+              alt="Construction site aerial view"
               fill
               priority
               className="object-cover object-center"
@@ -168,7 +168,7 @@ Always Listening
               >
                 <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#C8A24A] shrink-0" strokeWidth={2.5} />
                 <span className="text-white text-[13px] sm:text-[18px] lg:text-[18px] 2xl:text-[22px] whitespace-nowrap">
-                  Sustainable Technology
+                  Expert Engineering
                 </span>
               </motion.div>
               <motion.div
@@ -188,7 +188,7 @@ Always Listening
               >
                 <Check className="w-4 h-4 sm:w-5 sm:h-5 text-[#C8A24A] shrink-0" strokeWidth={2.5} />
                 <span className="text-white text-[13px] sm:text-[18px] lg:text-[18px] 2xl:text-[22px] whitespace-nowrap">
-                  Free Installation
+                  On-Time Delivery
                 </span>
               </motion.div>
             </motion.div>

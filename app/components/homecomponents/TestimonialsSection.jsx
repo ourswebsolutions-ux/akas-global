@@ -42,8 +42,8 @@ export default function TestimonialsSection() {
             }}
           >
             <Image
-              src="/testimonial.jpg"
-              alt="Solar facility supervisor"
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&q=80"
+              alt="Construction site supervisor"
               width={400}
               height={450}
               className="w-full h-[320px] sm:h-[450px] object-cover rounded-[28px]"
@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
                 },
               }}
             >
-              Solar Success Stories
+              Project Success Stories
             </motion.h2>
 
             {/* DESCRIPTION */}
@@ -122,7 +122,7 @@ export default function TestimonialsSection() {
                 },
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Trusted by clients for reliable construction delivery, precise engineering, and lasting quality results.
             </motion.p>
 
             {/* TESTIMONIAL CARD */}
@@ -159,7 +159,7 @@ export default function TestimonialsSection() {
                   }}
                 >
                   <p className="text-white text-[14px] sm:text-[16px] leading-[1.8] font-normal mb-6 sm:mb-8">
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    Their team delivered our facility on schedule with outstanding quality and clear communication
                   </p>
                   <div className="flex items-center gap-3 sm:gap-4 mt-auto">
                     <motion.div
@@ -174,7 +174,7 @@ export default function TestimonialsSection() {
                       }}
                     >
                       <Image
-                        src="/teste.jpg"
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&q=80"
                         alt="Sarah Lefèvre"
                         width={60}
                         height={60}
@@ -186,7 +186,7 @@ export default function TestimonialsSection() {
                         Sarah Lefèvre
                       </p>
                       <p className="text-[#D8B868] text-[10px] sm:text-[12px] font-bold tracking-[0.2em] uppercase mt-1">
-                        FACILITY SUPERVISOR
+                        SITE SUPERVISOR
                       </p>
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export default function TestimonialsSection() {
                   }}
                 >
                   <p className="text-white text-[14px] sm:text-[16px] leading-[1.8] font-normal mb-6 sm:mb-8">
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    AKAS handled our complex build with precision, professionalism, and reliable project management
                   </p>
                   <div className="flex items-center gap-3 sm:gap-4 mt-auto">
                     <motion.div
@@ -224,7 +224,7 @@ export default function TestimonialsSection() {
                       }}
                     >
                       <Image
-                        src="/testi2.jpg"
+                        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&q=80"
                         alt="Sofia Müller"
                         width={60}
                         height={60}
