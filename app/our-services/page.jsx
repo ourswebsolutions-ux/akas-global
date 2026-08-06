@@ -5,18 +5,21 @@ import ProjectsSection from "../components/homecomponents/ProjectsSection";
 import CTASection from "../components/homecomponents/CTASection";
 import TestimonialsSection from "../components/homecomponents/TestimonialsSection";
 import PricingSection from "../components/homecomponents/PricingSection";
+import OurServicesPage from "../components/our-services/ServiceCard";
 
 export default function Dashboard() {
  
     return (
         <>
             <HeroSection />
-            <ServicesSection />
+            <OurServicesPage />
+
             <ProjectsSection />
             <CTASection />
             <PricingSection />
 
             <TestimonialsSection />
+            
         </>
     );
 }

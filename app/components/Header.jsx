@@ -55,20 +55,17 @@ const servicesData = [
     ],
   },
   {
-    id: "landscaping-plantation",
-    title: "Landscaping & Plantation",
+    id: "landscaping",
+    title: "Landscaping",
     icon: TreePine,
     description:
       "Thoughtful outdoor landscape and plantation solutions that enhance environments and create lasting natural beauty.",
     items: [
       { label: "Softscape", slug: "softscape" },
       { label: "Hardscape", slug: "hardscape" },
-      { label: "Plantations", slug: "plantations" },
-      { label: "Irrigation Systems", slug: "irrigation-systems" },
-      {
-        label: "Lighting Design & Installation",
-        slug: "lighting-design-installation",
-      },
+      { label: "Plantation", slug: "plantation" },
+      { label: "Irrigation", slug: "irrigation" },
+      { label: "Lighting", slug: "lighting" },
       { label: "Water Features", slug: "water-features" },
     ],
   },
@@ -79,58 +76,40 @@ const servicesData = [
     description:
       "Integrated mechanical, electrical and plumbing engineering systems engineered for performance, safety and efficiency.",
     items: [
-      {
-        label: "Mechanical, Electrical & Plumbing Systems",
-        slug: "mechanical-electrical-plumbing-systems",
-      },
-      { label: "HVAC Systems", slug: "hvac-systems" },
-      {
-        label: "Fire Alarm & Fire Fighting Systems",
-        slug: "fire-alarm-fire-fighting-systems",
-      },
-      { label: "ELV Systems", slug: "elv-systems" },
+      { label: "Mechanical", slug: "mechanical" },
+      { label: "HVAC", slug: "hvac" },
+      { label: "Fire Alarm", slug: "fire-alarm" },
+      { label: "ELV", slug: "elv" },
       { label: "Data Centers", slug: "data-centers" },
     ],
   },
   {
-    id: "low-current-ict-services",
-    title: "Low Current / ICT Services",
+    id: "ict-services",
+    title: "ICT Services",
     icon: Camera,
     description:
       "Advanced security and intelligent technology systems that protect assets and enable smarter building operations.",
     items: [
       { label: "CCTV", slug: "cctv" },
       { label: "Access Control", slug: "access-control" },
-      {
-        label: "Security and Automation Systems",
-        slug: "security-and-automation-systems",
-      },
-      { label: "Public Address Systems", slug: "public-address-systems" },
-      {
-        label: "Video Wall & Conferencing Solutions",
-        slug: "video-wall-conferencing-solutions",
-      },
+      { label: "PA System", slug: "pa-system" },
+      { label: "Video Conference", slug: "video-conference" },
       { label: "Road Blockers", slug: "road-blockers" },
       { label: "Bollards", slug: "bollards" },
-      { label: "Gate Barriers", slug: "gate-barriers" },
     ],
   },
   {
-    id: "facade-fitout-solutions",
-    title: "Façade & Fitout Solutions",
+    id: "facade-fitout",
+    title: "Façade & Fitout",
     icon: Building,
     description:
       "Refined interior and exterior architectural solutions that define identity, comfort and lasting quality.",
     items: [
-      { label: "Façade Solutions", slug: "facade-solutions" },
-      { label: "Interior Fit Out", slug: "interior-fit-out" },
-      { label: "Office Design and Build", slug: "office-design-and-build" },
-      { label: "Kitchen Interiors", slug: "kitchen-interiors" },
-      {
-        label: "Retail Furniture & Homeware",
-        slug: "retail-furniture-homeware",
-      },
-      { label: "FF&E Services", slug: "ffe-services" },
+      { label: "Façade", slug: "facade" },
+      { label: "Interior Fitout", slug: "interior-fitout" },
+      { label: "Office Design", slug: "office-design" },
+      { label: "Kitchen", slug: "kitchen" },
+      { label: "FF&E", slug: "ffe" },
     ],
   },
   {
@@ -140,16 +119,11 @@ const servicesData = [
     description:
       "Precision concrete manufacturing and construction services supporting structural integrity and design excellence.",
     items: [
-      { label: "On-site Batching Plants", slug: "on-site-batching-plants" },
-      { label: "Ready-mix Concrete", slug: "ready-mix-concrete" },
-      { label: "Precast Concrete", slug: "precast-concrete" },
-      { label: "Decorative Concrete", slug: "decorative-concrete" },
-      {
-        label: "Concrete Testing & Quality Control",
-        slug: "concrete-testing-quality-control",
-      },
-      { label: "Shotcrete Services", slug: "shotcrete-services" },
-      { label: "Concrete Blocks", slug: "concrete-blocks" },
+      { label: "Ready Mix", slug: "ready-mix" },
+      { label: "Precast", slug: "precast" },
+      { label: "Decorative", slug: "decorative" },
+      { label: "Shotcrete", slug: "shotcrete" },
+      { label: "Blocks", slug: "blocks" },
     ],
   },
   {
@@ -159,22 +133,16 @@ const servicesData = [
     description:
       "High-performance industrial and decorative flooring systems engineered for durability, safety and aesthetics.",
     items: [
-      { label: "Insulation Works", slug: "insulation-works" },
-      { label: "Protection Works", slug: "protection-works" },
-      { label: "Concrete Flooring Works", slug: "concrete-flooring-works" },
-      { label: "Repairing Works", slug: "repairing-works" },
+      { label: "Insulation", slug: "insulation" },
+      { label: "Protection", slug: "protection" },
+      { label: "Repair", slug: "repair" },
       { label: "Expansion Joints", slug: "expansion-joints" },
-      {
-        label: "Specialized Flooring Solutions",
-        slug: "specialized-flooring-solutions",
-      },
-      { label: "Micro Topping Floors", slug: "micro-topping-floors" },
-      { label: "Decorative Patterned Floors", slug: "decorative-patterned-floors" },
+      { label: "Decorative Floors", slug: "decorative-floors" },
     ],
   },
   {
-    id: "real-estate-investment-developments",
-    title: "Real Estate Investment & Developments",
+    id: "real-estate",
+    title: "Real Estate",
     icon: Home,
     description:
       "End-to-end real estate solutions spanning investment strategy, development execution and long-term value creation.",
@@ -191,13 +159,10 @@ const servicesData = [
     description:
       "Professional property and facility management services that maintain operational excellence and asset value.",
     items: [
-      { label: "Hard & Soft Services", slug: "hard-soft-services" },
-      { label: "QHSE Services", slug: "qhse-services" },
-      { label: "Security Services", slug: "security-services" },
-      {
-        label: "Property Management Services",
-        slug: "property-management-services",
-      },
+      { label: "Hard Services", slug: "hard-services" },
+      { label: "Soft Services", slug: "soft-services" },
+      { label: "Security", slug: "security" },
+      { label: "Property Management", slug: "property-management" },
     ],
   },
 ];
@@ -228,19 +193,27 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <nav className="hidden items-center gap-8 lg:flex">
-            <a
+            <Link
               href="/"
               className="font-medium text-[#0B2A5B] transition hover:text-[#C8A24A]"
             >
               Home
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/about"
               className="font-medium text-gray-700 transition hover:text-[#C8A24A]"
             >
               About
-            </a>
+            </Link>
+
+            {/* Expertise link */}
+            <Link
+              href="/our-services"
+              className="font-medium text-gray-700 transition hover:text-[#C8A24A]"
+            >
+              Expertise
+            </Link>
 
             {/* Services Mega Menu */}
             <div className="relative group">
@@ -271,7 +244,6 @@ export default function Navbar() {
                                 : "text-gray-600 hover:bg-white/80 hover:text-[#0B2A5B]"
                             }`}
                           >
-                            {/* Active indicator bar */}
                             <span
                               className={`absolute left-0 top-1/2 h-5 w-[3px] -translate-y-1/2 rounded-r-full bg-[#C8A24A] transition-all duration-200 ${
                                 isActive
@@ -346,7 +318,7 @@ export default function Navbar() {
                           {activeCategory.items.map((item) => (
                             <li key={item.slug}>
                               <Link
-                                href={`/services/${activeCategory.id}/${item.slug}`}
+                                href={`/${activeCategory.id}/${item.slug}`}
                                 className="group/link flex items-center gap-2.5 rounded-lg px-2.5 py-2 text-[13.5px] text-gray-700 transition-all duration-150 hover:bg-[#F8FAFC] hover:text-[#0B2A5B]"
                               >
                                 <span className="h-1 w-1 flex-shrink-0 rounded-full bg-gray-300 transition-colors duration-150 group-hover/link:bg-[#C8A24A]" />
@@ -366,10 +338,10 @@ export default function Navbar() {
                       {/* Footer action */}
                       <div className="mt-6 flex items-center justify-between border-t border-gray-100 pt-5">
                         <Link
-                          href={`/our-services/`}
+                          href={`/${activeCategory.id}`}
                           className="inline-flex items-center gap-2 rounded-lg bg-[#0B2A5B] px-5 py-2.5 text-[13px] font-semibold text-white transition-all duration-200 hover:bg-[#081F45] hover:shadow-md"
                         >
-                          Explore Services
+                          Explore {activeCategory.title.split(" ")[0]}
                           <ArrowRight size={14} />
                         </Link>
                         <span className="text-[12px] text-gray-400">
@@ -390,19 +362,19 @@ export default function Navbar() {
               </button>
 
               <div className="invisible absolute text-gray-700 left-0 top-full mt-4 w-56 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
-                <a
+                <Link
                   href="/our-project"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
                 >
                   Our Projects
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/project-detail"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
                 >
                   Projects Details
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -414,35 +386,35 @@ export default function Navbar() {
               </button>
 
               <div className="invisible absolute text-gray-700 left-0 top-full mt-4 w-56 rounded-xl border border-gray-100 bg-white opacity-0 shadow-xl transition-all duration-300 group-hover:visible group-hover:opacity-100">
-                <a
+                <Link
                   href="/pricing"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
                 >
                   Pricing
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/team"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
                 >
                   Team
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/faqs"
                   className="block px-5 py-3 hover:bg-[#F8FAFC] hover:text-[#C8A24A]"
                 >
                   FAQs
-                </a>
+                </Link>
               </div>
             </div>
 
-            <a
+            <Link
               href="/contact"
               className="font-medium text-gray-700 transition hover:text-[#C8A24A]"
             >
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Right */}
@@ -470,19 +442,27 @@ export default function Navbar() {
           }`}
         >
           <div className="max-h-[70vh] overflow-y-auto rounded-2xl border border-[#C8A24A]/20 bg-white shadow-xl">
-            <a
+            <Link
               href="/"
               className="block border-b border-gray-100 px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B] transition active:bg-gray-50"
             >
               Home
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/about"
               className="block border-b border-gray-100 px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B] transition active:bg-gray-50"
             >
               About
-            </a>
+            </Link>
+
+            {/* Expertise link (mobile) */}
+            <Link
+              href="/our-services"
+              className="block border-b border-gray-100 px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B] transition active:bg-gray-50"
+            >
+              Expertise
+            </Link>
 
             {/* Mobile Services */}
             <details className="border-b border-gray-100 group">
@@ -524,12 +504,11 @@ export default function Navbar() {
                       </button>
                       {isOpen && (
                         <div className="bg-white px-5 pb-4 pt-1">
-                         
                           <ul className="mb-3 space-y-0.5">
                             {service.items.map((item) => (
                               <li key={item.slug}>
                                 <Link
-                                  href={`/services/${service.id}/${item.slug}`}
+                                  href={`/${service.id}/${item.slug}`}
                                   className="flex items-center gap-2 rounded-md px-1 py-1.5 text-[13px] text-gray-600 transition hover:text-[#0B2A5B]"
                                 >
                                   <span className="h-1 w-1 flex-shrink-0 rounded-full bg-[#C8A24A]" />
@@ -539,7 +518,7 @@ export default function Navbar() {
                             ))}
                           </ul>
                           <Link
-                            href={`/services/${service.id}`}
+                            href={`/${service.id}`}
                             className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#0B2A5B] transition hover:text-[#C8A24A]"
                           >
                             View all
@@ -563,19 +542,19 @@ export default function Navbar() {
               </summary>
 
               <div className="bg-[#F8FAFC]">
-                <a
-                  href="/our-projects"
+                <Link
+                  href="/our-project"
                   className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Our Projects
-                </a>
+                </Link>
 
-                <a
-                  href="/project-details"
+                <Link
+                  href="/project-detail"
                   className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Projects Details
-                </a>
+                </Link>
               </div>
             </details>
 
@@ -589,35 +568,35 @@ export default function Navbar() {
               </summary>
 
               <div className="bg-[#F8FAFC]">
-                <a
+                <Link
                   href="/pricing"
                   className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Pricing
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/team"
                   className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   Team
-                </a>
+                </Link>
 
-                <a
+                <Link
                   href="/faqs"
                   className="block px-8 py-3 text-[14px] font-medium text-[#0B2A5B] transition hover:text-[#C8A24A] active:bg-gray-100"
                 >
                   FAQs
-                </a>
+                </Link>
               </div>
             </details>
 
-            <a
+            <Link
               href="/contact"
               className="block border-b border-gray-100 px-5 py-3.5 text-[15px] font-medium text-[#0B2A5B] transition active:bg-gray-50"
             >
               Contact
-            </a>
+            </Link>
 
             <div className="p-4">
               <button className="w-full rounded-xl bg-[#0B2A5B] py-3.5 text-[15px] font-semibold text-white transition hover:bg-[#081F45] active:bg-[#061830]">
